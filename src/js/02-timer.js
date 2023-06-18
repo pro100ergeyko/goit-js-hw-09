@@ -44,7 +44,7 @@ function onDateCheck(selectedDates) {
     Report.success('Congratulation! Click on start!');
     return;
   }
-  Report.failure('Ooops...', 'Please, choose a date in the future and');
+  Report.failure('Ooops...', 'Please, choose a date in the future');
 }
 
 function timerStart() {
