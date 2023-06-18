@@ -4,7 +4,7 @@ const refs = {
   body: document.querySelector('body'),
 };
 
-let idInterval;
+let idInterval = null;
 
 refs.btnStop.disabled = true;
 refs.btnStart.addEventListener('click', onBtnStartClick);
