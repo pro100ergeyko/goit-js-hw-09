@@ -19,7 +19,7 @@ function createPromise(position, delay) {
       } else {
         reject({ position, delay });
       }
-    });
+    }, delay);
   });
 }
 
@@ -30,7 +30,7 @@ function onPromiseCreate(e) {
   let stepValue = Number(refs.step.value);
   let amountValue = Number(refs.amount.value);
 
-  for (let i = 0; i <= amountValue; i += 1) {
+  for (let i = 1; i <= amountValue; i += 1) {
     let promiseDalay = delayValue + stepValue * i;
 
     createPromise(i, promiseDalay)
